@@ -35,11 +35,28 @@ public class Ejercicio4 {
         String repeat = "";
 
 
+        // mapeo inicialmente todos los asientos
+        for (int i = 0; i < seat.length; i++){
+            for (int y = 0; y < seat[0].length; y++){
+
+                // marco como disponibles todos los asientos
+                seat[i][y] = 'O';
+                System.out.print(seat[i][y]);
+
+                // realizo un salto de linea cuando llegamos al último asiento de la fila
+                if (y==4){
+                    System.out.println();
+                }
+
+            }
+        }
+
+
         // Uso while para ir pidiendo la ubicación deseada y dentro pongo un bucle for para ir mostrando el estado de
         // todas las butacas
         while (flag){
 
-            System.out.print("Dime la fila que desea: ");
+            System.out.print("\nDime la fila que desea: ");
             row = scanner.nextInt();
 
             System.out.print("Dime el asiento que desea de la fila " + row + ": ");
@@ -55,8 +72,8 @@ public class Ejercicio4 {
             }
 
             // mapeo todos los asientos
-            for (int i = 0; i < 5; i++){
-                for (int y = 0; y < 5; y++){
+            for (int i = 0; i < seat.length; i++){
+                for (int y = 0; y < seat[0].length; y++){
 
                     // Si el asiento ya estaba ocupado pinto de nuevo la X
                     if(seat[i][y]  == 'X'){
