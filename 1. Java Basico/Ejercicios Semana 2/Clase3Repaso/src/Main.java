@@ -19,5 +19,21 @@ public class Main {
          **/
 
 
+        // a)
+        Verdura[] verduras = new Verdura[5];
+
+        verduras[0] = new Verdura(1, "Tomate", "Rojo", 22, "No");
+        verduras[1] = new Verdura(2, "Lechuga", "Verde", 15, "No");
+        verduras[2] = new Verdura(3, "Berenjena", "Morado", 25, "Si");
+        verduras[3] = new Verdura(4, "Calabacín", "Verde", 17, "Si");
+        verduras[4] = new Verdura(5, "Pepino", "Verde", 15, "No");
+
+
+        // b)
+        System.out.println("b)");
+        for (int i = 0; i < verduras.length; i++){
+
+            System.out.println("Nombre: " + verduras[i].getNombre() + ". Calorías: " + verduras[i].getCalorias());
+        }
     }
 }
