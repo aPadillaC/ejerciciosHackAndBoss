@@ -15,7 +15,6 @@ public class Main {
 
          d) Recorrer el vector y mostrar por pantalla únicamente a las verduras que sean de color verde.
 
-         División de tareas GRUPALES
          **/
 
 
