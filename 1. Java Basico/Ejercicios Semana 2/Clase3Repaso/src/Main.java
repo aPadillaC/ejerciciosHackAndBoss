@@ -46,7 +46,6 @@ public class Main {
         verduras[3].setCalorias(25);
         verduras[3].setDebeCocinarse("Si");
 
-
         //Cambio los datos de la verdura[4]
         verduras[4].setId(10);
         verduras[4].setNombre("Habichuela");
