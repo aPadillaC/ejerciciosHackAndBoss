@@ -15,7 +15,6 @@ public class Main {
 
          d) Recorrer el vector y mostrar por pantalla únicamente a las verduras que sean de color verde.
 
-         División de tareas GRUPALES
          **/
 
 
@@ -34,6 +33,44 @@ public class Main {
         for (int i = 0; i < verduras.length; i++){
 
             System.out.println("Nombre: " + verduras[i].getNombre() + ". Calorías: " + verduras[i].getCalorias());
+        }
+
+
+        // b)
+        System.out.println("c)");
+
+        //Cambio los datos de la verdura[3]
+        verduras[3].setId(8);
+        verduras[3].setNombre("Coliflor");
+        verduras[3].setColor("Blanco");
+        verduras[3].setCalorias(25);
+        verduras[3].setDebeCocinarse("Si");
+
+        //Cambio los datos de la verdura[4]
+        verduras[4].setId(10);
+        verduras[4].setNombre("Habichuela");
+        verduras[4].setColor("Verde");
+        verduras[4].setCalorias(31);
+        verduras[4].setDebeCocinarse("Si");
+
+        System.out.println("\n--> Información tras la actualización de datos:\n");
+
+        for (int i = 0; i < verduras.length; i++){
+
+            System.out.println("Nombre: " + verduras[i].getNombre() + ". Calorías: " + verduras[i].getCalorias());
+        }
+
+
+        // d)
+        System.out.println("\nd)");
+        System.out.println("--> Información de las verduras de color verde:\n");
+
+        for ( int i = 0; i < verduras.length; i++){
+
+            if (verduras[i].getColor().equalsIgnoreCase("Verde")){
+
+                System.out.println(i+1 + "." + verduras[i].toString());
+            }
         }
     }
 }
