@@ -1,0 +1,11 @@
+com\hackandboss\ejerciciovotaciones\logica\Voto.class
+com\hackandboss\ejerciciovotaciones\logica\Voto_.class
+com\hackandboss\ejerciciovotaciones\persistencia\VotoJpaController.class
+com\hackandboss\ejerciciovotaciones\JakartaRestConfiguration.class
+com\hackandboss\votaciones\persistencia\exceptions\NonexistentEntityException.class
+com\hackandboss\votaciones\persistencia\exceptions\PreexistingEntityException.class
+com\hackandboss\ejerciciovotaciones\persistencia\ControladoraPersistencia.class
+com\hackandboss\ejerciciovotaciones\resources\JakartaEE8Resource.class
+com\hackandboss\votaciones\persistencia\exceptions\IllegalOrphanException.class
+com\hackandboss\ejerciciovotaciones\servlets\VotoSV.class
+com\hackandboss\ejerciciovotaciones\logica\Controladora.class
