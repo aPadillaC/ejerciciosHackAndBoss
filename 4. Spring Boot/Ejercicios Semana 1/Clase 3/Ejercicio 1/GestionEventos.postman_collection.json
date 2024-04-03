@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "c4fa1c93-7d6e-49bd-ac9b-cacb27b82c17",
+		"name": "GestionEventos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26943304"
+	},
+	"item": [
+		{
+			"name": "ListadoEventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "CrearEvento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n  \"titulo\": \"Conferencia bioTecnologia\",\r\n  \"descripcion\": \"Conferencia sobre los avances en la medicina tecnologica.\",\r\n  \"fecha\": \"2024-06-15\",\r\n  \"hora\": \"11:00\",\r\n  \"lugar\": \"Salon de estudios Universidad Medicina\",\r\n  \"ponente\": \"Dr. Bill Gate\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarEventoPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eventos/2"
+			},
+			"response": []
+		}
+	]
+}
