@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "2f664baf-22d6-470f-a5bb-6318a39c37b8",
+		"name": "Restaurante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26943304"
+	},
+	"item": [
+		{
+			"name": "Ver Platos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restaurante/platos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurante",
+						"platos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Ingredientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restaurante/ingredientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurante",
+						"ingredientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPlato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restaurante/verPlato/Arroz con pollo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurante",
+						"verPlato",
+						"Arroz con pollo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
